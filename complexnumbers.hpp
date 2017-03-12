@@ -54,18 +54,18 @@ public:
         return 1;
     }
     friend ostream& operator<< (ostream &,  const complex &);
-    //friend istream& operator>> (istream &, complex &);
+    friend istream& operator>> (istream &, complex &);
 };
 
 ostream& operator<<(ostream &out, const complex &z)
 {
     return out << "(" << z.re << "," << z.im << ")";   
 }
-/*
+
 istream& operator>>(istream &in, complex &z)
 {
     in >> z.re >> z.im;
     return in; 
-}*/
+}
 
 #endif  
